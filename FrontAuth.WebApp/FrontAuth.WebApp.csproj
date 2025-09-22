@@ -9,11 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <Content Remove="Views\Auth\Login.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Auth\" />
+    <Compile Include="Views\Auth\Login.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
   </ItemGroup>
 
 </Project>
