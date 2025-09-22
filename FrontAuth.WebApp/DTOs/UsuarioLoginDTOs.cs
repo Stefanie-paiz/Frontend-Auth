@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FrontAuth.WebApp.DTOs
+namespace FrontAuth.WebApp.DTOs.UsuarioDTOs
 {
     public class UsuarioLoginDTO
     {
@@ -11,6 +11,7 @@ namespace FrontAuth.WebApp.DTOs
 
         [Required(ErrorMessage = "La contraseña es obligatoria")]
         [StringLength(100, MinimumLength = 6, ErrorMessage = "La contraseña debe tener entre 6 y 100 caracteres")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
     }
 }

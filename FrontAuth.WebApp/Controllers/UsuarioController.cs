@@ -1,5 +1,5 @@
-﻿using FrontAuth.WebApp.DTOs;
-using FrontAuth.WebApp.DTOS.UsuarioDTOs;
+﻿using FrontAuth.WebApp.DTOs.UsuarioDTOs;
+using FrontAuth.WebApp.DTOs.UsuarioDTOs;
 using FrontAuth.WebApp.Helpers;
 using FrontAuth.WebApp.Services;
 using Microsoft.AspNetCore.Mvc;

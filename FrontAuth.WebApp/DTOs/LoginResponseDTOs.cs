@@ -1,6 +1,6 @@
-﻿using FrontAuth.WebApp.DTOS.UsuarioDTOs;
+﻿using FrontAuth.WebApp.DTOs.UsuarioDTOs;
 
-namespace FrontAuth.WebApp.DTOs
+namespace FrontAuth.WebApp.DTOs.UsuarioDTOs
 {
     public class LoginResponseDTO : UsuarioDTO
     {

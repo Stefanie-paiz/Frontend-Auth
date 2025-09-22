@@ -1,4 +1,4 @@
-﻿using FrontAuth.WebApp.DTOs;
+﻿using FrontAuth.WebApp.DTOs.UsuarioDTOs;
 using System.Security.Claims;
 
 namespace FrontAuth.WebApp.Helpers
@@ -12,7 +12,7 @@ namespace FrontAuth.WebApp.Helpers
                 new Claim(ClaimTypes.Name, usuario.Nombre),
                 new Claim(ClaimTypes.Email, usuario.Email),
                 new Claim(ClaimTypes.Role, usuario.Rol),
-                new Claim("Token", usuario.Token),
+                new Claim("Token", usuario.Token)
             };
 
             var identity = new ClaimsIdentity(claims, "AuthCookie");

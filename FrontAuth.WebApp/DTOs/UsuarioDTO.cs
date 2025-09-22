@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FrontAuth.WebApp.DTOS.UsuarioDTOs
+namespace FrontAuth.WebApp.DTOs.UsuarioDTOs
 {
     public class UsuarioDTO
     {
@@ -15,7 +15,6 @@ namespace FrontAuth.WebApp.DTOS.UsuarioDTOs
         [StringLength(100, ErrorMessage = "El email no puede tener más de 100 caracteres")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "El rol es obligatorio")]
         public string Rol { get; set; }
     }
 }

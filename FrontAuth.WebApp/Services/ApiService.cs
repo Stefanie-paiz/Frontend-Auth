@@ -41,7 +41,7 @@ namespace FrontAuth.WebApp.Services
             return JsonSerializer.Deserialize<T>(json, _jsonOptions);
         }
 
-        // POST generico
+        // POST genérico
         public async Task<TResponse> PostAsync<TRequest, TResponse>(string endpoint, TRequest data, string token = null)
         {
             AddAuthorizationHeader(token);
@@ -53,7 +53,7 @@ namespace FrontAuth.WebApp.Services
             return JsonSerializer.Deserialize<TResponse>(json, _jsonOptions);
         }
 
-        // PUT generico
+        // PUT genérico
         public async Task<TResponse> PutAsync<TRequest, TResponse>(string endpoint, int id, TRequest data, string token = null)
         {
             AddAuthorizationHeader(token);
@@ -65,7 +65,7 @@ namespace FrontAuth.WebApp.Services
             return JsonSerializer.Deserialize<TResponse>(json, _jsonOptions);
         }
 
-        // DELETE generico
+        // DELETE genérico
         public async Task<bool> DeleteAsync(string endpoint, int id, string token = null)
         {
             AddAuthorizationHeader(token);
